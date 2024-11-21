@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 import Modal from './components/Modal';
 
 function App() {
-  const { cartItems } = useSelector((state) => state.cart);
-  const { isOpen } = useSelector((state) => state.modal);
+  const { cartItems } = useSelector((store) => store.cart);
+  const { isOpen } = useSelector((store) => store.modal);
   const dispatch = useDispatch();
 
   useEffect(() => {
